@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/408f0067a6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="player">
+        <div class="controls">
+           <nav>
+            <div class="circle">
+                <i class="fa-solid fa-angle-left"></i>
+             </div>
+             <div class="bars">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+           </nav>
+           <img src="raya.jpeg" class="song-image">
+           <h1>RAYA SONGS</h1>
+           <audio id="song">
+            <source src="NO BATIDO.mp3">
+           </audio>
+           <input type="range" class="volume" id="progress">
+           <div class="buttons">
+            <i class="fa-solid fa-shuffle" id="shuffle"></i>
+            <i class="fa-solid fa-backward" id="backward"></i>
+            <i onclick="playPause()" class="fa-solid fa-play" id="playbutton"></i>
+            <i class="fa-solid fa-forward" id="forward"></i>
+            <i class="fa-solid fa-repeat" id="repeat"></i>
+           </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
